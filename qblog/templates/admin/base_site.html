@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+<link href="{% static 'css/bootstrap.min.css' %} " rel="stylesheet"> 
+
+<link href="{% static 'css/admin.css' %} " rel="stylesheet"> 
+{% block title %}{{ title }} | {% trans 'Benny Danang k' %}{% endblock %}
+
+{% block content %}
+<h1>{% trans 'Benny Adminitrations' %}</h1>
+{% endblock %}
+
+
+{% block branding %}
+<h1 id="site-name" class="container"><img src="{% static 'images/home/logos.png' %}" alt="" height="50"/> {% trans 'Benny Danang K' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

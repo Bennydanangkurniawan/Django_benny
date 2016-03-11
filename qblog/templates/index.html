@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Benny {{username}} | Portofolio</title>
+
+   <!--  {% static 'css/bootstrap.css' %} -->
+
+    <link href="{% static 'css/bootstrap.min.css' %} " rel="stylesheet"> 
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'css/price-range.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +6285 8 7700 4695</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> l200120013@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+
+
+
+
+
+
+
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="{% static 'images/home/logos.png' %}" alt="" height="100"  5/></a> <br>
+							
+						</div>
+						<div class="btn-group pull-right">
+
+
+							<div class="btn-group" class="item active">
+							
+								<h2><span>Benny Danang K </span></h2>
+							
+								
+							</div>
+						
+							<!-- <div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Canadian Dollar</a></li>
+									<li><a href="#">Pound</a></li>
+								</ul>
+							</div> -->
+
+
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-user"></i> Tentang</a></li>
+								<li><a href="#"><i class="fa fa-star"></i> Portofolio</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Progress</a></li>
+								
+								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li class="dropdown"><a href="#">Tutorial<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Blender</a></li>
+										<li><a href="product-details.html">Code Igniter</a></li> 
+										<li><a href="checkout.html">Django</a></li> 
+										<li><a href="cart.html">Arduino</a></li> 
+										<li><a href="login.html">Desain Grafis</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="/superuser">Blog Admin</a></li>
+										<li><a href="blog-single.html">Blog Tutorial</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="404.html">Tentang</a></li>
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<!-- <div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+
+
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<!-- <li data-target="#slider-carousel" data-slide-to="1" class="active"></li>
+							 -->
+							 <li data-target="#slider-carousel" data-slide-to="0" class="active" >
+							{% if slider_all %}
+							{% for slider in slider_all %}
+								<li data-target="#slider-carousel" data-slide-to="{{slider.id}}" class="active" ></li>
+							{% endfor %}
+							{% endif %}
+							
+						</ol>
+						
+						<div class="carousel-inner">
+
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>BEN</span>NY</h1>
+									<h2>Welcome</h2>
+									<p>Selamat datang Website Tutorial dan Portofolio Benny Danang Kurniawan. Semoga Berkenan dan memberikan sebuah pengalaman kepada semua kawan yang membutuhkan tutorial </p>
+									<button type="button" class="btn btn-default get">Detail</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="{% static 'images/slider/Profils.gif' %}" height="200" class="girl img-responsive" alt="" />
+									<!-- <img src="{% static 'images/home/logos.png' %}" height="100" class="pricing" alt="" /> -->
+								</div>
+
+							</div>
+
+							{% if slider_all %}
+							{% for sliders in slider_all %}
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>{{sliders.title}}</span></h1>
+									<h2>{{sliders.title}}</h2>
+									<p>{{sliders.contain}} </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="{% static 'images/slider/' %}{{sliders.image}}" height="150" class="girl img-responsive" alt="" />
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								</div>
+
+							</div>
+							{% endfor %}
+							{% endif %}
+							
+							
+
+
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+	
+
+<!-- <div class="fb-page" data-href="https://www.facebook.com/benstutorial" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/benstutorial"><a href="https://www.facebook.com/benstutorial">Ben&#039;s Tutorial</a></blockquote></div></div>
+<div class="fb-page" data-href="https://www.facebook.com/benstutorial" data-tabs="timeline" data-width="500" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/benstutorial"><a href="https://www.facebook.com/benstutorial">Ben&#039;s Tutorial</a></blockquote></div></div>
+
+<iframe
+src="//www.facebook.com/plugins/like?href=http%3A%2F%2Fexample.com%2F&amp;kid_directed_site=true"
+  scrolling="no"
+  frameborder="0"
+  style="border:none; overflow:hidden; width:450px; height:80px"
+  allowTransparency="true">
+</iframe>
+
+
+<iframe
+src="//www.facebook.com/plugins/like?href=http%3A%2F%2Fexample.com%2F&amp;kid_directed_site=true"
+  scrolling="no"
+  frameborder="0"
+  style="border:none; overflow:hidden; width:450px; height:80px"
+  allowTransparency="true">
+</iframe>
+ -->
+
+<!-- <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/">Dikirim oleh <a href="https://www.facebook.com/facebook/">Facebook</a> pada&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">27 Agustus 2015</a></blockquote></div></div>
+
+
+
+<div class="fb-page" 
+  data-href="https://www.facebook.com/facebook"
+  data-width="380" 
+  data-hide-cover="false"
+  data-show-facepile="false" 
+  data-show-posts="false"></div>
+
+	
+	<div class="fb-page" 
+  data-tabs="events"
+  data-href="https://www.facebook.com/benstutorial"
+  data-width="380"></div>
+	 -->
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<h5><marquee><b>Benny Danang Kurniawan</b>|  <a href="#"><i class="fa fa-phone"></i> +6285 8 7700 4695</a> | e-mail: <a href="#"><i class="fa fa-envelope"></i> l200120013@gmail.com</a></marquee></h5>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="/help">Online Help</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Order Status</a></li>
+								<li><a href="#">Change Location</a></li>
+								<li><a href="#">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">T-Shirt</a></li>
+								<li><a href="#">Mens</a></li>
+								<li><a href="#">Womens</a></li>
+								<li><a href="#">Gift Cards</a></li>
+								<li><a href="#">Shoes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privecy Policy</a></li>
+								<li><a href="#">Refund Policy</a></li>
+								<li><a href="#">Billing System</a></li>
+								<li><a href="#">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Company Information</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Affillate Program</a></li>
+								<li><a href="#">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About</h2>
+							<form action="#" class="searchform">
+								
+								<p>Do.. it...Do...it<br />Is my first page</p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Benny Danang Kurninawan | L2001020013@gmail.com</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="">Benny danang k</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+	<script src="{% static 'js/price-range.js' %}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

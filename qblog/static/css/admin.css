@@ -1,0 +1,5 @@
+#header { background:#FAD9A4; color:#9A6002; overflow:hidden; }
+#header a:link, #header a:visited { color:white; }
+#header a:hover { text-decoration:underline; }
+#branding h1 { padding:0 10px; font-size:18px; margin:8px 0; font-weight:bold; color:#9A6002; }
+#branding h2 { padding:0 10px; font-size:14px; margin:-8px 0 8px 0; font-weight:normal; color:#9A6002; }
